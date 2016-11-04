@@ -1,22 +1,8 @@
-# React ActiveItem
+# React Active Item
 
 **EXPERIMENTAL**
 
 A react [Higher Order Component](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.bexwe8ttm) that keeps track of a list of objects and provides an API to find focus items, set focused items, and get the index value of a focused item.
-
-
-## Demo & Examples
-
-Live demo: [chadfennell.github.io/react-active-item](http://chadfennell.github.io/react-active-item/)
-
-To build the examples locally, run:
-
-```
-npm install
-npm start
-```
-
-Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
 
 ## Installation
@@ -26,15 +12,7 @@ The easiest way to use react-active-item is to install it from NPM and include i
 You can also use the standalone build by including `dist/react-active-item.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
 ```
-npm install react-active-item --save
-```
-
-## Usage
-
-
-`export default ActiveItem(YourComponentHere)`
-
-
+npm install git:+git@github.com:UMNLibraries/react-active-item.git --save
 ```
 
 ### Properties
@@ -43,9 +21,11 @@ npm install react-active-item --save
 
 ### API
 
-* getActiveItem() - get the item currently in focus
-* getActiveItemIndex() - get the index value of the actively focused item
-* setActiveItem(i) - pass in an index value to set the focus of an item
+
+In the context of your wrapped component:
+* this.props.getActiveItem() - get the item currently in focus
+* this.props.getActiveItemIndex() - get the index value of the actively focused item
+* this.props.setActiveItem(i) - pass in an index value to set the focus of an item
 
 
 ## Development (`src`, `lib` and the build process)
