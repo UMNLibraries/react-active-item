@@ -1,6 +1,8 @@
 # React ActiveItem
 
-__COMPONENT DESCRIPTION GOES HERE__
+**EXPERIMENTAL**
+
+A react [Higher Order Component](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.bexwe8ttm) that keeps track of a list of objects and provides an API to find focus items, set focused items, and get the index value of a focused item.
 
 
 ## Demo & Examples
@@ -27,24 +29,23 @@ You can also use the standalone build by including `dist/react-active-item.js` i
 npm install react-active-item --save
 ```
 
-
 ## Usage
 
-__EXPLAIN USAGE HERE__
 
-```
-var ReactActiveItem = require('react-active-item');
+`export default ActiveItem(YourComponentHere)`
 
-<ReactActiveItem>Example</ReactActiveItem>
+
 ```
 
 ### Properties
 
-* __DOCUMENT PROPERTIES HERE__
+* Items - an array of objects, each containing a `focus` key.
 
-### Notes
+### API
 
-__ADDITIONAL USAGE NOTES__
+* getActiveItem() - get the item currently in focus
+* getActiveItemIndex() - get the index value of the actively focused item
+* setActiveItem(i) - pass in an index value to set the focus of an item
 
 
 ## Development (`src`, `lib` and the build process)
@@ -55,7 +56,4 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-__PUT LICENSE HERE__
-
-Copyright (c) 2016 Chad Fennell.
-
+MIT Pending Copyright (c) 2016 University of Minnesota
