@@ -15,6 +15,10 @@ You can also use the standalone build by including `dist/react-active-item.js` i
 npm install git:+git@github.com:UMNLibraries/react-active-item.git --save
 ```
 
+### Demo
+
+Demo and example implementation may be found here: https://github.com/UMNLibraries/react-citation
+
 ### Properties
 
 * Items - an array of objects, each containing a `focus` key.
