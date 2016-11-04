@@ -1,0 +1,29 @@
+{
+  "name": "react-active-item",
+  "version": "0.0.0",
+  "description": "React ActiveItem",
+  "main": "dist/react-active-item.min.js",
+  "homepage": "https://github.com/chadfennell/react-active-item",
+  "authors": [
+    "Chad Fennell"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
